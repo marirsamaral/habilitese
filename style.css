@@ -1,0 +1,953 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&family=Zen+Antique&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+::-webkit-scrollbar{
+    height: 0px;
+}
+
+
+header{ /*Primeiro texto do site*/
+    background-color:rgb(9, 35, 50);
+    text-align: center;
+    padding: 20px;
+}
+
+header > a { /*Primeiro texto do site*/
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+    background-color: rgb(9, 35, 50);
+    margin-inline: 1.5em;
+}
+.header { /*imagens de telefone e email*/
+    transform: translate(+25%, +20%);
+}
+
+img.logo { /*Logo*/
+    transform: translate(+50%, -20%);
+    width: 100%;
+}
+
+
+nav {
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.329);
+    display: flex;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+nav > a { /*Menu de navegação*/
+    background-color: white;
+    width: 170px;
+}
+
+
+.curso1 { /*Curso e Prova*/
+    width: 150px;
+    font-size: 12px;
+    color: rgba(9, 35, 51, 0.808);
+    font-weight: 800;
+    transform: translate(+160%, +40%);
+    height: 30px;
+}
+
+.curso1:hover { /*Configuraração para passar o mouse em cima */
+    color: rgb(250, 103, 53);
+}
+
+.curso2 { /*Encontre um CFC*/
+    width: 150px;
+    font-size: 12px;
+    color: rgba(9, 35, 51, 0.808);
+    font-weight: 800;
+    transform: translate(+150%, +40%);
+    height: 30px;
+}
+
+.curso2:hover { /*Configuraração para passar o mouse em cima */
+    color: rgb(250, 103, 53);
+}
+
+
+.curso3 { /*Blog*/
+    width: 150px;
+    font-size: 12px;
+    color: rgba(9, 35, 51, 0.808);
+    font-weight: 800;
+    transform: translate(+150%, +40%);
+    height: 30px;
+}
+
+.curso3:hover {/*Configuraração para passar o mouse em cima */
+    color: rgb(250, 103, 53);
+}
+
+
+.curso4 { /*Fale Conosco*/
+    width: 120px;
+    font-size: 12px;
+    color: rgba(9, 35, 51, 0.808);
+    font-weight: 800;
+    transform: translate(+120%, +40%);
+    height: 30px;
+}
+
+.curso4:hover { /*Configuraração para passar o mouse em cima */
+    color: rgb(250, 103, 53);
+}
+
+
+nav > input { /* Botão Acessar Plataforma */
+    font-size: 16px;
+    background-color:rgb(250, 103, 53) ;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    border: none;
+    height: 50px;
+    font-weight: bolder;
+    transform: translate(+100%, -10%);
+    width: 250px;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 73%;
+    height: 500px;
+    overflow: hidden; 
+}
+
+.slides { /*botão input*/
+    width: 400%;
+    height: 100px;
+    display: flex;
+}
+
+.slides input{
+    display: none; /*para que os botões fiquem escondidos da tela*/
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+
+}
+
+.slide img {
+    display: block;
+    width: 800px;
+    transform: translate(+10%, +20%);
+
+}
+
+.manual-navegation {
+    position: absolute;
+    width: 800px;
+    margin-top: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {/*bolinhas do carrosel*/
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: translate(+700%, +300%)
+}
+
+.manual-btn:not(:last-child) { /*espaçamento entre as bolinhas menos na ultima */
+    margin-right: 40px;
+    
+}
+
+.manual-btn:hover {/*quando passar o mouse em cima vai ficar laranja*/
+    background-color: rgb(250, 103, 53);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+.navigation-auto div{
+    border: 2px solid rgb(250, 103, 53);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color:  rgb(250, 103, 53);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color:  rgb(250, 103, 53);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color:  rgb(250, 103, 53);
+}
+.homologados { /*Config. geral Homologados*/
+    padding: 20px;
+    height: 420px;
+    background-color: rgb(244,250,254);
+    
+}
+section > h2 { /*A Habilite-se tem o curso e a prova que você precisa*/
+    color:rgb(37, 50, 75);
+    font-size: 2em;
+    padding: 10px;
+    width: 450px;
+    height: 150px;
+    margin: auto;
+    font-weight: bolder;
+}
+
+.homologados > div > ul > li > a {
+    color: black;
+    list-style-type: none;
+}
+
+
+.cursos { /*Cursos Homologados*/
+    font-size: 1.0em;
+    display: block;
+    transform: translate(+20%, -10%);
+    
+}
+
+
+.ead { /*Texto do Ead*/
+    font-size: 12px;
+    transform: translate(+21%, +10%);
+    list-style-type: none;
+    background-image: url();
+}
+
+.pv { /*Texto de Provas*/
+    list-style-type: none; /*para tirar o ponto da lista*/
+    font-size: 13px;
+    transform: translate(+60%, -120%);
+}
+
+.primeira { /*Texto Presencial, Remoto ou Ao Vivo*/
+    font-size: 13px;
+    transform: translate(+21%, -500%);
+    list-style-type: none; /*para tirar o ponto da lista*/
+}
+
+.provas { /*Provas*/
+    padding: 10px;
+    transform: translate(+60%, -250%);
+    display: block;
+}
+
+.principal { /* EAD / Presencial, Remoto...*/
+    color: rgb(250, 103, 53);
+    display: block;
+    font-size: 15px;
+    padding: 2px;
+    transform: translate(+20%, -10%);
+}
+
+.principal2 {
+    color: rgb(250, 103, 53);
+    display: block;
+    font-size: 15px;
+    transform: translate(+20%, -500%);
+}
+
+
+section.azul {
+    background-color: rgb(10, 37, 53);
+    height: 400px;
+    padding: 40px;
+}
+
+img.imgfelicidade {
+    height: 330px;
+    width: 400px;
+    transform: translate(+40%, -70%);
+    position: relative;
+}
+
+.titulofelicidade { /*A felicidade de quem voltou a dirigir*/
+    transform: translate(+40%, +20%);
+    background-color: rgb(10, 37, 53);
+    color: white;
+    font-size: 2em;
+    width: 300px;
+}
+
+.felicidade { /*CNh suspensa? ...*/
+    font-size: 13px;
+    width: 350px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(10, 37, 53);
+    color: rgba(255, 255, 255, 0.616);
+    transform: translate(+40%, +10%);
+}
+
+
+
+section > input { /*Botão Curso de Reciclagem*/
+    font-size: 12px;
+    background-color:rgb(50, 97, 125) ;
+    border-radius: 2px;
+    padding: 10px;
+    color: white;
+    border: none;
+    margin: auto;
+    display: block;
+    transform: translate(+50%, -850%);
+    width: 220px;
+    font-weight: bolder;
+}
+
+#atendimento{
+    height: 1000px;
+    background-color: white;
+}
+.ttvanta{ /*Vantagens de ser um parceiro Habilite-se*/ 
+    transform: translate(+2%, +1%);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.txtvanta{ /*Titulo: Atendimento/Resposta Rapida...*/
+    color: rgb(250, 103, 53);
+    font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.txtate:hover{ /*configuração de passar o mouse em cima*/
+    background-color: rgba(0, 0, 0, 0.048);
+    border-radius: 10px;
+}
+
+.txtate{ /*Texto atendimento*/
+    width:330px;
+    padding: 20px;
+    transform: translate(+90%, -2%);
+    font-size: 13px;
+}
+
+.txtrr { /*texto Resposta Rapida*/
+    width:330px;
+    padding: 20px;
+    transform: translate(+210%, -106%);
+    font-size: 13px;
+}
+
+.txtrr:hover{ /*configuração de passar o mouse em cima*/
+    background-color: rgba(0, 0, 0, 0.048);
+    border-radius: 10px;
+}
+
+.txtmi { /*Texto Migração*/
+    width:330px;
+    padding: 20px;
+    transform: translate(+90%, -100%);
+    font-size: 13px;
+}
+
+.txtmi:hover{ /*configuração de passar o mouse em cima*/
+    background-color: rgba(0, 0, 0, 0.048);
+    border-radius: 10px;
+}
+
+.txteco { /*Texto Economia*/
+    width:330px;
+    padding: 20px;
+    transform: translate(+210%, -212%);
+    font-size: 13px;
+}
+
+.txteco:hover{ /*configuração de passar o mouse em cima*/
+    background-color: rgba(0, 0, 0, 0.048);
+    border-radius: 10px;
+}
+
+.visita {
+    background-color: rgb(244, 250, 254) ;
+    padding: 10px;
+}
+
+.txtvisita { /*Acho que já deu para entender...*/
+    font-size: 20px;
+    width: 610px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(10, 37, 53);
+
+}
+
+
+div > input { /*Botão Quero a visita de...*/
+    font-size: 15px;
+    background-color:rgb(50, 97, 125) ;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    border: none;
+    display: block;
+    margin: auto;
+    width: 320px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.plf{/*Config. geral Os alunos...*/
+    color: white;
+    width: 700px;
+    font-size: 40px;
+    
+}
+.plataforma { /*Os aluno na plataforma Habilite-se estão em boa mãos*/
+    background-color: rgb(10, 37, 53) ;
+    height: 600px;
+    padding: 50px;
+    text-align: center;
+}
+
+.carro1 { /*Imagem 1*/
+    transform: translate(-55%, +5%);
+}
+
+.carro2{ /*Imagem 2*/
+    transform: translate(-50%, +5%);
+}
+
+.carro3 { /*Imagem 3*/
+    transform: translate(+105%, -97%);
+}
+
+.ValeaPena { /*Config Geral*/
+    background-color: rgb(50,97,125);
+    height: 600px;
+}
+
+.ValeaPena > h2 {
+    color: white;
+    width: 350px;
+    font-size: 40px;
+    padding: 30px;
+    transform: translate(+70%, +80%);
+}
+
+.ValeaPena > p {
+    color: rgba(255, 255, 255, 0.493);
+    width: 400px;
+    transform: translate(+198%, +280%);
+    font-size: 15px;
+}
+
+.ValeaPena > input { /*Quero a visita de um consultor*/
+    transform: translate(+100%, +370%);
+    background-color: rgb(10, 37, 53);
+    font-size: 15px;
+    padding: 10px;
+    width: 270px;
+}
+
+.ValeaPena > img {
+    transform: translate(+10%, -50%);
+}
+
+section.notas1 { /*Config. Geral Olha só o que */
+    background-color:rgb(244, 250, 254) ;
+    height: 900px;
+}
+
+section.notas1 > h2 { /*Olha só o que eles estão falando*/
+    font-size: 45px;
+    text-align: center;
+    padding: 50px;
+}
+
+fieldset.notas { /*Avaliação da Deborah*/
+    height: 500px;
+    width: 320px;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 13px;
+    border: 2px solid rgba(0, 0, 0, 0.363);
+    display: block;
+    transform: translate(20%, -10%);
+}
+
+fieldset.notas2 { /*Avaliação da Joyce*/
+    height: 500px;
+    width: 320px;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 13px;
+    border: 2px solid rgba(0, 0, 0, 0.363);
+    transform: translate(125%, -110%);
+}
+
+fieldset.notas3 { /*Avaliação da Daiane*/
+    height: 500px;
+    width: 320px;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 13px;
+    border: 2px solid rgba(0, 0, 0, 0.363);
+    transform: translate(230%, -210%);
+}
+
+
+fieldset.escolha1 { /*Config do campo 1 */
+    border-radius: 20px;
+    box-shadow: 0px 1px 7px black;
+    height: 380px;
+    width: 80%;
+    transform: translate(+10%, -7%);
+    border: none;
+}
+
+.esc {  /*Porque escolher a Habilite-se*/
+    font-size: 40px;
+    text-align: center;
+}
+
+.escolha1 > img { /*Imagem 1*/
+    height: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.escolha1 > strong { /*Feito para você*/
+    color: rgb(250, 103, 53);
+    font-size: 25px;
+    position: absolute;
+    top: 15%;
+    right: 32%;
+}
+
+.escolha1 > p { /*Texto 1 */
+    position: absolute;
+    width: 40%;
+    top: 27%;
+    right: 10%;
+    color: rgba(0, 0, 0, 0.628);
+    font-size: 15px;
+}
+
+fieldset.escolha2 { /*Config do campo 2 */
+    border-radius: 20px;
+    box-shadow: 0px 1px 3px rgb(0, 0, 0);
+    height: 380px;
+    width: 80%;
+    transform: translate(+10%, -7%);
+    border: none;
+}
+
+.escolha2 > strong { /* Equipe Profissional*/
+    color: rgb(250, 103, 53);
+    font-size: 25px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.escolha2 > img { /*Imagem 2*/
+    height: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 52%; /*colocar a imagem a direita*/
+}
+.escolha2 > p { /*Texto 2 */
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 15px;
+}
+
+fieldset.escolha3 { /*Config do campo 3 */
+    border-radius: 20px;
+    box-shadow: 0px 1px 3px rgb(0, 0, 0);
+    height: 380px;
+    width: 80%;
+    transform: translate(+10%, -7%);
+    border: none;
+}
+
+.escolha3 > img { /*Imagem 3*/
+    height: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    right: 53%;
+}
+
+.escolha3 > strong { /*Entendemos você*/
+    color: rgb(250, 103, 53);
+    font-size: 25px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.escolha3 > p { /*Texto 3 */
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 15px;
+}
+
+fieldset.escolha4 { /*Config do campo 4 */
+    border-radius: 20px;
+    box-shadow: 0px 1px 3px rgb(0, 0, 0);
+    height: 380px;
+    width: 80%;
+    transform: translate(+10%, -7%);
+    border: none;
+}
+
+.escolha4 > img { /*Imagem 4*/ 
+    height: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 52%;
+}
+
+.escolha4 > strong {
+    color: rgb(250, 103, 53);
+    font-size: 25px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.escolha4 > p { /*Texto 4*/
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    bottom: 35%;
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 15px;
+}
+
+section.vamos { /*Config Geral Vamos conversar? */
+    height: 600px;
+    background-color: rgb(50, 97, 125);
+}
+
+.vamos > h2 { /*Vamos Conversar*/
+    color: white;
+    font-size: 40px;
+    position: relative;
+    right: 35%;
+    top: 30%;
+    width: 20px;
+}
+
+.vamos > p {
+    color: white;
+    position: relative;
+    left: 14%;
+    top: 25%;
+    width: 250px;
+}
+
+fieldset.conversar1 {
+    width:30%;
+    height: 12%;
+    padding: 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    bottom: 28%;
+    background-color: white;
+    border: none;
+}
+
+.conversar1 > p {
+    color: rgba(0, 0, 0, 0.397);
+}
+
+fieldset > a { /* Saiba Mais*/
+    color:rgb(8, 32, 46);
+    position: absolute;
+    left: 75%;
+    top: 40%;
+    font-weight: bolder;
+}
+
+section.institucional > div > ul > li > a { /*Config color das letras do rodapé. Habilite-se/ cursos e provas..*/
+    color: rgba(255, 255, 255, 0.507);
+    
+} 
+
+fieldset.conversar2 {
+    width:30%;
+    height: 12%;
+    padding: 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    bottom: 20%;
+    background-color: white;
+    border: none;
+}
+
+.conversar2 > p {
+    color: rgba(0, 0, 0, 0.397);
+}
+
+fieldset.conversar3 {
+    width:30%;
+    height: 14%;
+    padding: 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    bottom: 15%;
+    background-color: white;
+    border: none;
+}
+
+.blog { /*Config Geral Blog*/
+    height: 600px;
+    background-color: rgb(238, 244, 248);
+}
+.blog > h2 { /*Blog*/
+    font-size: 45px;
+    position: relative;
+    right: 20%;
+    top: 10%;
+}
+.espaço { /*Texto: Esse é o espaço que...*/
+    width: 20%;
+    font-size: 15px;
+    position: relative;
+    left: 23%;
+    bottom: 18%;
+}
+
+.blog > img {/*Imagem 1*/
+    border-radius: 20px;
+    transform: translate(+50%, -30%);
+}
+
+.dt1 { /*Data 12 de abril de 2023*/
+    color: rgba(0, 0, 0, 0.411);
+    font-size: 13px;
+    position: relative;
+    left: 12%;
+    top: -8%;
+}
+
+.limite { /*texto novo limite*/
+    font-weight: bolder;
+    font-size: 18px;
+    width: 24%;
+    position: relative;
+    left: 12%;
+    bottom: 7%;
+}
+
+.blog > input.leia1  { /* Leia Mais */
+    color: rgb(250, 103, 53);
+    background-color: white;
+    border-radius: 10px;
+    border-color: rgb(250, 103, 53);
+    transform: translate(+10%, -100%);
+}
+
+.blog > input.leia3  { /* Leia Mais 1 Novo Limite */
+    color: rgb(250, 103, 53);
+    background-color: white;
+    border-radius: 10px;
+    border-color: rgb(250, 103, 53);
+    transform: translate(-170%, -1780%);
+}
+
+.blog > input.leia2  { /* Leia Mais 3 */
+    color: rgb(250, 103, 53);
+    background-color: white;
+    border-radius: 10px;
+    border-color: rgb(250, 103, 53);
+    transform: translate(+178%, -900%);
+}
+
+img.pontuacao  { /*2° Imagem */
+    transform: translate(+165%, -198%);
+}
+
+
+
+.dt2 { /*Data 12 de abril de 2023*/
+    color: rgba(0, 0, 0, 0.411);
+    font-size: 13px;
+    position: relative;
+    left: 40%;
+    top: -62%;
+}
+
+.pontuacao1 { /*Texto O direito...*/
+    font-weight: bolder;
+    font-size: 18px;
+    width: 24%;
+    position: relative;
+    left: 40%;
+    top: -61%;
+}
+
+img.reci { /*3° Imagem*/
+    transform: translate(+275%, -355%);
+}
+
+.reci1 { /*Texto Curso d Reciclagem*/
+    font-weight: bolder;
+    font-size: 18px;
+    width: 24%;
+    position: relative;
+    left: 68%;
+    top: -111.5%;
+}
+
+.dt3 { /*Data 12 de abril de 2023*/
+    color: rgba(0, 0, 0, 0.411);
+    font-size: 13px;
+    position: relative;
+    left: 68%;
+    top: -111.5%;
+}
+
+
+
+
+section.institucional { /*Config Geral*/
+    background-color:rgb(10, 37, 53) ;
+    font-size: 15px;    
+    height: 100%;
+    
+
+}
+
+section.itt { /*Institucional*/
+    background-color: rgb(10, 37, 53) ;
+    font-size: 13px;
+    color: white;
+    font-weight: bolder;
+}
+
+.itt { /*Titulo Institucional*/
+    transform: translate(+10%, +250%);
+    font-weight: bolder;
+    color: white;
+}
+
+ul.teste { /*1° parte do Institucional*/
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+    transform: translate(+10%, +100%);
+}
+
+
+ul.teste2 {/*2° parte  do Institucional*/
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+    transform: translate(+25%, +5%);
+
+}
+
+ul.teste3{ /*3° parte do Institucional*/ 
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+    transform: translate(+35%, -60%);
+    color: rgba(255, 255, 255, 0.507);
+}
+
+.redes{ /*A Habilite-se te ajuda a estar sempre informado*/
+    color: rgba(255, 255, 255, 0.507);
+    font-size: 12px;
+    transform: translate(+525%, -600%);
+    width: 150px;
+}
+
+.insta { /*icone do Intagram*/
+    transform: translate(+2070%, -520%);
+}
+
+.face { /*Icone do Facebook*/
+    transform: translate(+2150%, -540%);
+}
+
+.chat { /*Icone do Chat*/
+    transform: translate(+2300%, -540%);
+}
+
+.logofinal {
+    transform: translate(+300%, -340%);
+}
+
+.txtreclame{ /*Somos uma empresa verificada pelo Reclame Aqui*/
+    width: 200px;
+    color: rgba(255, 255, 255, 0.507);
+    font-size: 12px;
+    transform: translate(+520%, -800%);
+    
+}
+
+.imgreclame{/*Imagem Reclame aqui*/ 
+    margin: 0px;
+    padding: 0px;
+    transform: translate(+1070%, -280%);
+}
+
+
+footer > p {  /*Rodapé*/
+    background-color: rgb(8, 32, 46) ;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}

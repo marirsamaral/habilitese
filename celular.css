@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+/*Estilo para telas de celulares*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&family=Zen+Antique&display=swap');
+
+body,html {
+    width: 770px;
+}
+
+::-webkit-scrollbar{
+    height: 0px;
+}
+
+header{ /*Primeiro texto do site*/
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    display: none; /*ocultar o texto quando tiver */
+}
+
+nav a {
+    display: none;
+}
+
+nav input { /*Acessar a Pltaforma*/
+    width: 130px;
+    font-size: 11px;
+    padding: none;
+    height: 55px;
+}
+
+section.homologados { /*Config Geral*/
+    padding: none;
+    height: 700px;
+}
+
+section > h2 { /*A Habilite-se tem o curso e a prova que você precisa*/
+    font-size: 1.6em;
+    width: 270px;
+    text-align: center;
+}
+
+.cursos { /*Cursos já Homologados*/
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+    width: 250px;
+    margin-left: -15px;
+}
+
+.principal {/*Titulo EAD*/
+    font-size: 16px;
+    margin-left: -40px;
+}
+
+.ead { /*Texto do Ead*/
+    font-size: 16px;
+    text-align: left;
+    margin-left: -50px;
+}
+
+.principal2 { /*Titulo Presencial, Remoto ou Ao Vivo*/
+    margin-top: -320px;
+    margin-left: -37px;
+    width: 350px;
+}
+
+.primeira { /*Texto Primeira, remoto*/
+    margin-top: 20px;
+    margin-left: -20px;
+    font-size: 16px;
+    width: 250px;
+}
+
+.provas { /*Provas*/
+    margin-top: 250px;
+    margin-left: -450px;
+    font-size: 16px;
+}
+
+
+.pv { /*Texto de Provas*/
+    display: block;
+    margin-top: 50px;
+    margin-left: -120px;
+    font-size: 16px;
+    width: 250px;
+}
+
+section.azul {
+    height: 300px;
+}
+
+.titulofelicidade { /*A felicidade de quem voltou a dirigir*/
+    font-size: 18px;
+    width: 170px;
+    margin-top: 10px;
+}
+
+.felicidade { /*CNh suspensa? ...*/
+    font-size: 12px;
+    width: 170px;
+    margin-top: -70px;
+}
+
+img.imgfelicidade { /*Imagem das Mulher com Chave*/
+    width: 200px;
+    height: 170px;
+    margin-left: -130px;
+    margin-top: -50px;
+}
+
+section > input { /*Botão Curso de Reciclagem Habilite-se*/
+    margin-top: 220px;
+    margin-left: -20px;
+}
+
+#atendimento{
+    height: 250vh;
+}
+
+.ttvanta{ /*Vantagens de ser um parceiro Habilite-se*/ 
+    font-size: 25px;
+    padding-top: 50px;
+
+}
+
+.txtate{ /*bloco atendimento*/
+   margin-left: -330px;
+   margin-top: -80px;
+}
+
+.txtrr { /*bloco Rapida*/
+    margin-left: -770px;
+    margin-top: 420px;
+}
+
+.txtmi {/*bloco Migração*/
+    margin-left: -330px;
+    margin-top: 5px;
+}
+
+.txteco { /*Texto Economia*/
+    margin-left: -770px;
+    margin-top: 380px;
+}
+
+.visita {/*Configuração Visita*/
+    height: 230px;
+    width: 360px;
+}
+
+.txtvisita { /*Acho que já deu para entender...*/
+    width: 340px;
+    font-size: 14px;
+}
+
+div > input { /*Botão Quero a visita de...*/
+    font-size: 12px;
+    width: 250px;
+    margin-top: -5px;
+}
+
+.plataforma{
+    height: 50px;
+}
+
+.plf{
+    font-size: 20px;
+    width: 300px;
+    margin-top:-20px;
+    margin-left: -10px;
+}
+
+.plataforma > img {
+    display: none;
+}
+
+.ValeaPena {/*Excluir o Vale a Pena*/
+    display: none;
+}
+
+section.notas1 { 
+    height: 2000px;
+}
+
+fieldset.notas { /*Avaliação da Deborah*/
+    width: 250px;
+    transform: translate(10%, -350%);
+}
+
+fieldset.notas2 { /*Avaliação da Joyce*/
+    width: 250px;
+    transform: translate(10%, -340%);
+}
+
+fieldset.notas3 {/*Avaliação da Daiane*/
+    width: 250px;
+    transform: translate(10%, -330%);
+} 
+
+section.notas1 > h2{ /*Config. Geral Olha só o que */
+    font-size: 25px;
+    width: 250px;
+    height: 100%;
+}
+
+.escolhas { /*Excluir o Feito para Você*/
+    display: none;
+}
+
+.blog { /*Config Geral Blog*/
+    height: 1500px;
+
+}
+
+.blog > h2 { /*Blog*/
+    font-size: 25px;
+    transform: translate(25%, -50%);
+}
+
+.espaço { /*Texto: Esse é o espaço que...*/
+    width: 270px;
+    transform: translate(-10%, 600%);
+}
+
+
+
+.blog > img {/*Imagem 1*/
+    transform: translate(12%, 10%);
+}
+
+.dt1 { /*Data 12 de abril de 2023*/
+    transform: translate(2%, 820%);
+}
+
+.limite { /*texto novo limite*/
+    font-size: 17px;
+    width: 250px;
+    transform: translate(10%, 200%);
+}
+
+img.pontuacao  { /*2° Imagem */
+    transform: translate(10%, -50%);
+}
+
+.dt2 { /*Data 12 de abril de 2023*/
+    transform: translate(-25%, 4650%);
+}
+
+.pontuacao1 { /*Texto O direito...*/
+    font-size: 17px;
+    width: 250px;
+    transform: translate(-35%, 1800%);
+}
+
+img.reci { /*3° Imagem*/
+    transform: translate(+275%, -355%);
+}
+
+.reci1 { /*Texto Curso d Reciclagem*/
+    font-size: 17px;
+    width: 270px;
+    transform: translate(-70%, 2000%);
+}
