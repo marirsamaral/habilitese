@@ -435,7 +435,6 @@ div > input { /*Botão Quero a visita de...*/
     color: white;
     width: 700px;
     font-size: 40px;
-    
 }
 .plataforma { /*Os aluno na plataforma Habilite-se estão em boa mãos*/
     background-color: rgb(10, 37, 53) ;
@@ -690,7 +689,7 @@ section.vamos { /*Config Geral Vamos conversar? */
     width: 250px;
 }
 
-fieldset.conversar1 {
+fieldset.conversar1 { /**/
     width:30%;
     height: 12%;
     padding: 30px;

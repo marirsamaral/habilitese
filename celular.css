@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-/*Estilo para telas de celulares*/
+/*Estilo para telas de menores de pc */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&family=Zen+Antique&display=swap');
 
 body,html {
-    width: 770px;
+    width: 490px;
 }
 
 ::-webkit-scrollbar{
@@ -23,10 +23,25 @@ nav a {
 }
 
 nav input { /*Acessar a Pltaforma*/
-    width: 130px;
+    width: 140px;
     font-size: 11px;
     padding: none;
-    height: 55px;
+    height: 40px;
+    margin-left: 50px;
+}
+
+.slider {
+    height: 250px;
+    width: 83%;
+}
+
+.slide img {
+    display: block;
+    width: 330px;
+}
+
+.manual-btn {/*bolinhas do carrosel*/
+    transform: translate(-1800%, -1700%)
 }
 
 section.homologados { /*Config Geral*/
@@ -38,6 +53,7 @@ section > h2 { /*A Habilite-se tem o curso e a prova que você precisa*/
     font-size: 1.6em;
     width: 270px;
     text-align: center;
+    margin-left: 90px;
 }
 
 .cursos { /*Cursos já Homologados*/
@@ -56,8 +72,7 @@ section > h2 { /*A Habilite-se tem o curso e a prova que você precisa*/
 
 .ead { /*Texto do Ead*/
     font-size: 16px;
-    text-align: left;
-    margin-left: -50px;
+    margin-left: -80px;
 }
 
 .principal2 { /*Titulo Presencial, Remoto ou Ao Vivo*/
@@ -117,13 +132,13 @@ section > input { /*Botão Curso de Reciclagem Habilite-se*/
 }
 
 #atendimento{
-    height: 250vh;
+    height: 270vh;
 }
 
 .ttvanta{ /*Vantagens de ser um parceiro Habilite-se*/ 
     font-size: 25px;
     padding-top: 50px;
-
+    margin-left: 100px;
 }
 
 .txtate{ /*bloco atendimento*/
@@ -149,6 +164,11 @@ section > input { /*Botão Curso de Reciclagem Habilite-se*/
 .visita {/*Configuração Visita*/
     height: 230px;
     width: 360px;
+}
+
+.visita {
+    background-color: rgb(244, 250, 254) ;
+    width: 490px;
 }
 
 .txtvisita { /*Acho que já deu para entender...*/
@@ -204,6 +224,8 @@ section.notas1 > h2{ /*Config. Geral Olha só o que */
     font-size: 25px;
     width: 250px;
     height: 100%;
+    margin-left: 10px;
+    padding: 70px;
 }
 
 .escolhas { /*Excluir o Feito para Você*/
@@ -222,17 +244,28 @@ section.notas1 > h2{ /*Config. Geral Olha só o que */
 
 .espaço { /*Texto: Esse é o espaço que...*/
     width: 270px;
-    transform: translate(-10%, 600%);
+    transform: translate(-5%, 600%);
 }
 
 
 
 .blog > img {/*Imagem 1*/
-    transform: translate(12%, 10%);
+    transform: translate(25%, 10%);
 }
 
-.dt1 { /*Data 12 de abril de 2023*/
-    transform: translate(2%, 820%);
+.blog > input.leia1  { /* Leia Mais */
+    transform: translate(65%, -400%);
+}
+
+.blog > input.leia3  { /* Leia Mais 1 Novo Limite */
+    transform: translate(65%, -1100%);
+}
+
+.blog > input.leia2  { /* Leia Mais 3 */
+    transform: translate(65%, -720%);
+}
+.dt1 { /*Data 12 de abril de 2023  1*/
+    transform: translate(5%, 820%);
 }
 
 .limite { /*texto novo limite*/
@@ -242,25 +275,106 @@ section.notas1 > h2{ /*Config. Geral Olha só o que */
 }
 
 img.pontuacao  { /*2° Imagem */
-    transform: translate(10%, -50%);
+    transform: translate(25%, -50%);
 }
 
-.dt2 { /*Data 12 de abril de 2023*/
-    transform: translate(-25%, 4650%);
+.dt2 { /*Data 12 de abril de 2023  2*/
+    transform: translate(-150%, 4650%);
 }
 
 .pontuacao1 { /*Texto O direito...*/
     font-size: 17px;
     width: 250px;
-    transform: translate(-35%, 1800%);
+    transform: translate(-40%, 1800%);
 }
 
 img.reci { /*3° Imagem*/
-    transform: translate(+275%, -355%);
+    transform: translate(+25%, -120%);
+}
+
+.dt3 { /*Data 12 de abril de 2023  2*/
+    transform: translate(-200%, 4650%);
 }
 
 .reci1 { /*Texto Curso d Reciclagem*/
     font-size: 17px;
     width: 270px;
-    transform: translate(-70%, 2000%);
+    transform: translate(-90%, 2100%);
+}
+
+
+section.vamos { /*Config Geral Vamos conversar? */
+    height: 850px;
+}
+
+.vamos > h2 { /*Vamos Conversar*/
+    font-size: 20px;
+    transform: translate(550%, -120%);
+}
+
+.vamos > p { /*é acho que depois de tudo isso */
+    transform: translate(50%, -550%);
+    margin-left: -80px;
+}
+
+fieldset.conversar1 { /*Quero a Habilite-se no meu CFC*/
+    width:70%;
+    height: 10%;
+    margin-left: -215px;
+    margin-top: 250px;
+}
+
+fieldset.conversar2 {/*Sou aluno e estou com dúvida!*/
+    width:70%;
+    height: 10%;
+    margin-left: -215px;
+}
+
+
+fieldset.conversar3 { /*Meu CFC já trabalha com a...*/
+    width:70%;
+    height: 10%;
+    margin-left: -215px;
+}
+
+ul.teste { /*1° parte do Institucional*/
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: -120px;
+}
+
+ul.teste2 {/*2° parte  do Institucional*/
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: 190px;
+    margin-left: -100px;
+}
+
+ul.teste3{ /*3° parte do Institucional*/ 
+    font-size: 15px;
+    margin-top: 190px;
+    margin-left: -190px;
+}
+
+.logofinal { /*Logo Habilite-se*/
+
+    transform: translate(+150%, -1190%);
+}
+
+.insta { /*icone do Intagram*/
+    margin-left: -620px;
+    margin-top: 10px;
+}
+
+.redes{/*A Habilite-se te ajuda a estar sempre informado*/
+    width: 180px;
+    font-size: 14px;
+    margin-left: -800px;
+    margin-top: 200px;
+}
+
+.txtreclame{ /*Somos uma empresa verificada pelo Reclame Aqui*/
+    font-size: 14px;
+    margin-left: -100px;
+    
 }
