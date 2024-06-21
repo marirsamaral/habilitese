@@ -34,6 +34,7 @@ header > a { /*Primeiro texto do site*/
 img.logo { /*Logo*/
     transform: translate(+50%, -20%);
     width: 100%;
+    flex: 1 1 auto;
 }
 
 
@@ -146,7 +147,6 @@ nav > input { /* Botão Acessar Plataforma */
     display: block;
     width: 800px;
     transform: translate(+10%, +20%);
-
 }
 
 .manual-navegation {
@@ -297,7 +297,6 @@ img.imgfelicidade {
     height: 330px;
     width: 400px;
     transform: translate(+40%, -70%);
-    position: relative;
 }
 
 .titulofelicidade { /*A felicidade de quem voltou a dirigir*/

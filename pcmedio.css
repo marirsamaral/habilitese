@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media (min-width: 769px) and (max-width: 1024px){
+    body,html {
+        width: 494px;
+    }
+    
+    header > a {
+        font-size: 9px;
+    }
+}
