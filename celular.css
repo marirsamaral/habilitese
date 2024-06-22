@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&family=Zen+Antique&display=swap');
 
 @media (max-width: 600px) {
-
     
     ::-webkit-scrollbar{
         height: 0px;
+        width: 0px;
     }
     
     header{ /*Primeiro texto do site*/
@@ -16,34 +16,39 @@
         padding: 20px;
         display: none; /*ocultar o texto quando tiver */
     }
-    
-    nav a {
+
+    nav {
+        width: 658px;
+    }
+
+    nav > a {
         display: none;
     }
     
     nav input { /*Acessar a Pltaforma*/
-        width: 140px;
-        font-size: 11px;
+        width: 240px;
+        font-size: 20px;
         padding: none;
-        height: 40px;
-        margin-left: 50px;
+        height: 50px;
+        margin-left: -20px;
     }
     
-    .slider {
-        height: 250px;
-        width: 83%;
+    .slider { /*confi geral do carrosel*/
+        height: 400px;
+        width: 160%;
     }
     
     .slide img {
         display: block;
-        width: 330px;
+        width: 600px;
     }
     
     .manual-btn {/*bolinhas do carrosel*/
-        transform: translate(-1800%, -1700%)
+        transform: translate(-500%, -600%)
     }
     
     section.homologados { /*Config Geral*/
+        width: 640px;
         padding: none;
         height: 700px;
     }
@@ -52,112 +57,149 @@
         font-size: 1.6em;
         width: 270px;
         text-align: center;
-        margin-left: 90px;
     }
     
     .cursos { /*Cursos já Homologados*/
         font-size: 16px;
         margin-bottom: 10px;
-        display: block;
         text-align: left;
         width: 250px;
-        margin-left: -15px;
     }
     
     .principal {/*Titulo EAD*/
+        text-align: left;
         font-size: 16px;
-        margin-left: -40px;
+        margin-left: -90px;
     }
     
     .ead { /*Texto do Ead*/
         font-size: 16px;
-        margin-left: -80px;
+        margin-left: -100px;
     }
     
     .principal2 { /*Titulo Presencial, Remoto ou Ao Vivo*/
         margin-top: -320px;
-        margin-left: -37px;
+        text-align: left;
+        margin-left: -12px;
         width: 350px;
     }
     
     .primeira { /*Texto Primeira, remoto*/
+        text-align: left;
         margin-top: 20px;
-        margin-left: -20px;
         font-size: 16px;
         width: 250px;
     }
     
     .provas { /*Provas*/
+        text-align: left;
+        margin-right: 575px;
         margin-top: 250px;
-        margin-left: -450px;
         font-size: 16px;
     }
     
     
     .pv { /*Texto de Provas*/
         display: block;
+        text-align: left;
         margin-top: 50px;
-        margin-left: -120px;
+        margin-left: -100px;
         font-size: 16px;
         width: 250px;
     }
     
     section.azul {
         height: 300px;
+        width: 600px;
     }
     
     .titulofelicidade { /*A felicidade de quem voltou a dirigir*/
-        font-size: 18px;
-        width: 170px;
+        font-size: 25px;
+        width: 300px;
         margin-top: 10px;
     }
     
     .felicidade { /*CNh suspensa? ...*/
-        font-size: 12px;
+        font-size: 14px;
         width: 170px;
         margin-top: -70px;
+        margin-left: 240px;
     }
     
     img.imgfelicidade { /*Imagem das Mulher com Chave*/
-        width: 200px;
-        height: 170px;
+        width: 300px;
+        height: 270px;
         margin-left: -130px;
         margin-top: -50px;
     }
     
     section > input { /*Botão Curso de Reciclagem Habilite-se*/
-        margin-top: 220px;
-        margin-left: -20px;
+        font-size: 16px;
+        width: 300px;
+        margin-top: 150px;
+        margin-left: 140px;
     }
     
     #atendimento{
-        height: 270vh;
+        height: 230vh;
+        width: 680px;
     }
     
     .ttvanta{ /*Vantagens de ser um parceiro Habilite-se*/ 
-        font-size: 25px;
+        font-size: 30px;
+        text-align: center;
         padding-top: 50px;
-        margin-left: 100px;
+        width: 350px;
+    }
+
+    .txtvanta{ /*Titulo: Atendimento/Resposta Rapida...*/
+        text-align: center;
+    }
+
+    .txtate > img { /*img atendimento*/
+        display: block;
+        margin: auto;
     }
     
-    .txtate{ /*bloco atendimento*/
-       margin-left: -330px;
-       margin-top: -80px;
+    .txtate{ /*texto atendimento*/
+        margin-left: -270px;
+        font-size: 17px;
+       width: 400px;
     }
     
     .txtrr { /*bloco Rapida*/
-        margin-left: -770px;
-        margin-top: 420px;
+        font-size: 17px;
+        width: 400px;
+        margin-left: -800px;
+        margin-top: 480px;
+    }
+    .txtrr > img { /*img atendimento*/
+        display: block;
+        margin: auto;
     }
     
     .txtmi {/*bloco Migração*/
-        margin-left: -330px;
-        margin-top: 5px;
+        font-size: 17px;
+        width: 400px;
+        margin-left: -270px;
+        margin-top: -90px;
+    }
+
+    .txtmi > img { /*img migração*/
+        display: block;
+        margin: auto;
     }
     
     .txteco { /*Texto Economia*/
-        margin-left: -770px;
-        margin-top: 380px;
+        font-size: 17px;
+        width: 400px;
+        margin-left: -800px;
+        margin-top: 470px;
+    }
+
+    .txteco > img { /*img economia*/
+        display: block;
+        margin: auto;
     }
     
     .visita {/*Configuração Visita*/
@@ -165,14 +207,16 @@
         width: 360px;
     }
     
+
     .visita {
         background-color: rgb(244, 250, 254) ;
-        width: 490px;
+        width: 660px;
+        height: 250px;
     }
     
     .txtvisita { /*Acho que já deu para entender...*/
         width: 340px;
-        font-size: 14px;
+        font-size: 17px;
     }
     
     div > input { /*Botão Quero a visita de...*/
@@ -181,18 +225,19 @@
         margin-top: -5px;
     }
     
-    .plataforma{
+    .plataforma{ /*Conf Geral*/
         height: 50px;
+        width: 580px;
     }
     
-    .plf{
-        font-size: 20px;
+    .plf{ /*Os alunos na plataforma Habilite-se estão em boa mãos*/
+        font-size: 25px;
         width: 300px;
-        margin-top:-20px;
-        margin-left: -10px;
+        margin: auto;
+        margin-top: -30px;
     }
     
-    .plataforma > img {
+    .plataforma > img {/*Excluir imagem*/
         display: none;
     }
     
@@ -202,21 +247,32 @@
     
     section.notas1 { 
         height: 2000px;
+        width: 680px;
+    }
+
+    .notas1 { /*Olha só o que eles estão*/
+        font-size: 55px;
     }
     
     fieldset.notas { /*Avaliação da Deborah*/
-        width: 250px;
-        transform: translate(10%, -350%);
+        width: 320px;
+        margin: auto;
+        transform: translate(5%, -350%);
+        font-size: 17px;
     }
     
     fieldset.notas2 { /*Avaliação da Joyce*/
-        width: 250px;
-        transform: translate(10%, -340%);
+        width: 320px;
+        margin: auto;
+        font-size: 17px;
+        transform: translate(5%, -340%);
     }
     
     fieldset.notas3 {/*Avaliação da Daiane*/
-        width: 250px;
-        transform: translate(10%, -330%);
+        width: 320px;
+        margin: auto;
+        font-size: 17px;
+        transform: translate(5%, -330%);
     } 
     
     section.notas1 > h2{ /*Config. Geral Olha só o que */
@@ -233,48 +289,49 @@
     
     .blog { /*Config Geral Blog*/
         height: 1500px;
-    
+        width: 680px;
     }
     
     .blog > h2 { /*Blog*/
-        font-size: 25px;
-        transform: translate(25%, -50%);
+        font-size: 35px;
+        transform: translate(50%, -50%);
     }
     
     .espaço { /*Texto: Esse é o espaço que...*/
-        width: 270px;
-        transform: translate(-5%, 600%);
+        font-size: 17px;
+        width: 350px;
+        transform: translate(+10%, 550%);
     }
-    
     
     
     .blog > img {/*Imagem 1*/
-        transform: translate(25%, 10%);
+        transform: translate(55%, 10%);
     }
     
     .blog > input.leia1  { /* Leia Mais */
-        transform: translate(65%, -400%);
+        transform: translate(20%, -250%);
     }
     
     .blog > input.leia3  { /* Leia Mais 1 Novo Limite */
-        transform: translate(65%, -1100%);
+        transform: translate(20%, -500%);
     }
     
     .blog > input.leia2  { /* Leia Mais 3 */
-        transform: translate(65%, -720%);
+        transform: translate(20%, -420%);
     }
     .dt1 { /*Data 12 de abril de 2023  1*/
-        transform: translate(5%, 820%);
+        font-size: 15px;
+        transform: translate(15%, 750%);
     }
     
     .limite { /*texto novo limite*/
         font-size: 17px;
         width: 250px;
-        transform: translate(10%, 200%);
+        transform: translate(40%, 200%);
     }
     
     img.pontuacao  { /*2° Imagem */
-        transform: translate(25%, -50%);
+        transform: translate(50%, -25%);
     }
     
     .dt2 { /*Data 12 de abril de 2023  2*/
@@ -284,11 +341,11 @@
     .pontuacao1 { /*Texto O direito...*/
         font-size: 17px;
         width: 250px;
-        transform: translate(-40%, 1800%);
+        transform: translate(-40%, 1900%);
     }
     
     img.reci { /*3° Imagem*/
-        transform: translate(+25%, -120%);
+        transform: translate(+50%, -50%);
     }
     
     .dt3 { /*Data 12 de abril de 2023  2*/
@@ -298,66 +355,84 @@
     .reci1 { /*Texto Curso d Reciclagem*/
         font-size: 17px;
         width: 270px;
-        transform: translate(-90%, 2100%);
+        transform: translate(-110%, 2300%);
     }
     
     
     section.vamos { /*Config Geral Vamos conversar? */
         height: 850px;
+        width: 680px;
     }
     
     .vamos > h2 { /*Vamos Conversar*/
-        font-size: 20px;
-        transform: translate(550%, -120%);
+        font-size: 35px;
+        width: 350px;
+        transform: translate(70%, -120%);
     }
     
     .vamos > p { /*é acho que depois de tudo isso */
+        font-size: 17px;
+        width: 270px;
         transform: translate(50%, -550%);
-        margin-left: -80px;
     }
     
     fieldset.conversar1 { /*Quero a Habilite-se no meu CFC*/
-        width:70%;
-        height: 10%;
+        font-size: 17px;
+        width:60%;
+        height: 7%;
         margin-left: -215px;
         margin-top: 250px;
     }
     
     fieldset.conversar2 {/*Sou aluno e estou com dúvida!*/
-        width:70%;
-        height: 10%;
+        font-size: 17px;
+        width:60%;
+        height: 7%;
         margin-left: -215px;
     }
     
     
     fieldset.conversar3 { /*Meu CFC já trabalha com a...*/
-        width:70%;
+        font-size: 17px;
+        width:60%;
         height: 10%;
         margin-left: -215px;
+    }
+
+    section.institucional { /*Config Geral*/
+        width: 680px;
+    }
+
+    .itt { /*Titulo Institucional*/
+        text-align: center;
+        font-size: 22px;
+        transform: translate(+3%, +370%);
     }
     
     ul.teste { /*1° parte do Institucional*/
         font-size: 20px;
+        text-align: center;
+        margin-left: -150px;
         line-height: 50px;
-        margin-top: -120px;
+        margin-top: -90px;
     }
     
     ul.teste2 {/*2° parte  do Institucional*/
         font-size: 20px;
+        text-align: center;
         line-height: 50px;
         margin-top: 190px;
-        margin-left: -100px;
+        margin-left:-650px;
     }
     
     ul.teste3{ /*3° parte do Institucional*/ 
-        font-size: 15px;
+        font-size: 17px;
         margin-top: 190px;
         margin-left: -190px;
     }
     
     .logofinal { /*Logo Habilite-se*/
-    
-        transform: translate(+150%, -1190%);
+        transform: translate(+230%, -1280%);
     }
     
     .insta { /*icone do Intagram*/
